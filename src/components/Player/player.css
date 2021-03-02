@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+.player{
+    display: flex;
+    border-bottom: 1px solid red;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+#player-name{
+    color: green;
+}
+.player-info{
+margin-left: 100px;
+}
+.country-name{
+    color: red;
+}
+#detail-background{
+    height: 300px;
+    width: 200px;
+    padding-top: 120px;
+    background-image: url(../../Img/background.png);
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    text-align: center;
+}
+#detail-link{
+    text-decoration: none;
+    color:gold
+}
