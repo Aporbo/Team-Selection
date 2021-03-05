@@ -5,6 +5,7 @@ import { faUserPlus } from '@fortawesome/free-solid-svg-icons'
 const Player = (props) => {
     const {name, img, salary, country,format} = props.player;
     const imgStyle = {height:'200px'}
+
     // const playerStyle = {border: '1px solid red', margin:'10px', padding:'10px'}
     const handleAddPlayer = props.handleAddPlayer;
     return (

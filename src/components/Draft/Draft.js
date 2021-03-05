@@ -26,16 +26,20 @@ const Draft = (props) => {
 
             <div class="card" >
                 <div class="card-header">
-                  Latest Players
+                  Latest Selected Player
   </div>
 
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"> {playerName}-${salary}</li>
+                    <li class="list-group-item">  {playerName}-${salary}</li>
                 </ul>
                 <div class="card border-success mb-3">
   <div class="card-header">Selected Players</div>
   <div class="card-body text-success">   
-    <p class="card-text">{playerNames}</p>
+    <p class="card-text"><ul>
+    {
+        playerNames.map((m)=> <li>{m}</li>)
+    }
+</ul></p>
   </div>
 </div>
 
