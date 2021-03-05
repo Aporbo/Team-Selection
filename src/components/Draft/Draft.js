@@ -13,6 +13,12 @@ const Draft = (props) => {
         const Salary = draft[i];
         salary = Salary.salary;
     }
+
+    let playerNames=[];
+    for (let i = 0; i < draft.length; i++) {
+        const player = draft[i];
+        playerNames[i] = player.name;
+    }
     return (
 
         <div className="draft-container">
@@ -20,14 +26,30 @@ const Draft = (props) => {
 
             <div class="card" >
                 <div class="card-header">
-                    Players
+                  Latest Players
   </div>
+
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"> {playerName}-${salary}</li>
                 </ul>
+                <div class="card border-success mb-3">
+  <div class="card-header">Selected Players</div>
+  <div class="card-body text-success">   
+    <p class="card-text">{playerNames}</p>
+  </div>
+</div>
+
                 <li class="list-group-item">Total Budget:$ {totalSalary} </li>
+            
+          
             </div>
+           
+
+     
+   
+   
         </div>
+        
     );
 };
 

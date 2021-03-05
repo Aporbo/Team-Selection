@@ -1,6 +1,4 @@
-body{
-    background-color: black;
-}
+
 .player{
     display: flex;
     border-bottom: 1px solid red;

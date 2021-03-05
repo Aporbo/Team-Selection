@@ -4,8 +4,6 @@ import Player from './components/Player/Player';
 import Draft from './components/Draft/Draft';
 import Header from './components/Header/Header';
 
-
-
 function App() {
    const [Plyers, setPlayers] = useState([]);
    const [draft, setDraft] = useState([]);
