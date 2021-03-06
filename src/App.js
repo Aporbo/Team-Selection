@@ -9,7 +9,7 @@ function App() {
    const [draft, setDraft] = useState([]);
 
    useEffect(()=>{
-     fetch('http://www.json-generator.com/api/json/get/bTCGZGzdfm?indent=2')
+     fetch('https://www.json-generator.com/api/json/get/bTCGZGzdfm?indent=2')
      .then(res => res.json())
      .then(data=>setPlayers(data))
      .catch(error => console.log(error))
